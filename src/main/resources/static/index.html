@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="eng">
+<head>
+    <meta charse="utf-8" />
+    <title>HTML Exercise</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <script type="text/javascript" src="js/Submit.js"></script>
+    <div id="wrapper">
+        <div id="answerDiv">
+	   		<h1 id="answer">Please enter a question.</h1>
+		</div>
+		<div id="requestDiv">
+	    	<form onsubmit="submitQuestion(); return false;">
+				<p id="questionTitle">Question:</p>
+				<input type="text" name="question" autocomplete="off" id="questionInput">
+				<input id="button" type="submit" value="Submit">
+	    	</form>
+		</div>
+    </div>
+</body>
+</html>
+

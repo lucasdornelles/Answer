@@ -1,0 +1,49 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+body {
+    text-align: center;
+    background-color: #647e9b;
+    color: white;
+}
+
+#wrapper {
+   display: flex;
+}
+
+#answerDiv {
+    display: block;
+    padding: 10px;
+    position: absolute;
+    width: 350px;
+    height: 200px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#requestDiv {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+}
+
+#questionInput {
+    width: 180px;
+    margin: 10px;
+}
+
+#questionTitle {
+    text-align: left;
+    padding: 10px;
+}
+
+#button{
+    padding: 3px;
+}
