@@ -1,12 +1,11 @@
 function submitQuestion() {
     var question = document.getElementById('questionInput').value;
-    const Http = new XMLHttpRequest();
-    var url ='answer?question='+question;
-    Http.onreadystatechange = function() {
-	if (this.readyState == 4 && this.status == 200){
-	    document.getElementById('answer').innerHTML = this.responseText;
-    	}
-    }
-    Http.open('GET',url,true);
-    Http.send(null);
+    fetch('answer', {
+        method: 'POST',
+        body: question
+    }).then(function(response) {
+        return response.text();
+    }).then(function(text) {
+        document.getElementById('answer').innerHTML = text;
+    })
 }
