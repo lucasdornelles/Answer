@@ -5,10 +5,10 @@ public class RandomAnswer {
     public static String parseAnswer (String question) {
         int questionLength = question.length();
         if (isEven(questionLength)) {
-            return "Yes";
+            return "No";
         }
         else {
-            return "No";
+            return "Yes";
         }
     }
 

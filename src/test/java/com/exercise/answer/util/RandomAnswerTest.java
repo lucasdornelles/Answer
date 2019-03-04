@@ -8,14 +8,14 @@ public class RandomAnswerTest {
     public void assertTrue () {
         String question = "aa";
         String actual = parseAnswer(question);
-        String expected = "Yes";
+        String expected = "No";
         assertEquals("assert even", expected, actual);
     }
     @Test
     public void assertFalse () {
         String question = "a";
         String actual = parseAnswer(question);
-        String expected = "No";
+        String expected = "Yes";
         assertEquals("assert not even", expected, actual);
     }
 }
